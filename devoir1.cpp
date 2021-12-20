@@ -130,14 +130,13 @@ f2+= (pow(cpFile2[i].cpt,2));
 cout << " . . . " << endl;
 if (produit == 0) { cout << " there is no similarity between the two files " << endl;
  }
+	
 else { 
 int result =100*(produit/(sqrt(f1)*sqrt(f2))) ;
 cout <<" the similarity between file 1 & file 2 is up to "<<result <<"%" << endl;
  
 /*
-this formula does not work : (180/3.14159)*acos((produit/(cpFile1.size()*cpFile2.size()))) 
-but i tried many ways with different cases in vectors and it does not give me the right number
-
+using acos(cos(produit/(sqrt(f1)*sqrt(f2)))) has the same result of 'result'
 */
 }
  
